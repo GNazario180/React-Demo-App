@@ -1,12 +1,29 @@
-# React + Vite
+# React Demo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Setup
 
-Currently, two official plugins are available:
+1. Clone the repository:  
+`git clone <your-repo-url>`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Navigate to the project folder:  
+`cd react-demo-app`
 
-## Expanding the ESLint configuration
+3. Install dependencies:  
+`npm install`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. Start the development server:  
+`npm run dev`
+
+5. Run tests:  
+`npm test`
+
+## App Overview
+- **Login Page:** Enter a phone number starting with `+254`. Only `+254712345678` is valid for this mock login. Successful login redirects to the Main page.  
+- **Main Page:** Displays a list of users fetched from a public API with a search bar to filter results. Clicking a user navigates to the Detail page.  
+- **Detail Page:** Shows detailed information about the selected user with a back button to return to the Main page.  
+
+## Notes
+- Built using React functional components and Hooks.  
+- Uses `localStorage` to maintain login state.  
+- `node_modules` is ignored; dependencies are installed via `npm install`.  
+- Unit tests are included for phone validation using Jest.
