@@ -3,7 +3,7 @@
 ## Project Setup
 
 1. Clone the repository:  
-`git clone <your-repo-url>`
+`git clone <https://github.com/GNazario180/React-Demo-App>`
 
 2. Navigate to the project folder:  
 `cd react-demo-app`
